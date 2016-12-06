@@ -1,7 +1,7 @@
 from sympy import *
 from sympy.abc import x,y,z,a,b,c,f,t,k,n
 
-from process_latex import process_sympy
+from latex2sympy.process_latex import process_sympy
 
 theta = Symbol('theta')
 
