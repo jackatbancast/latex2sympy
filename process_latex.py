@@ -2,9 +2,9 @@ import sympy
 import antlr4
 from antlr4.error.ErrorListener import ErrorListener
 
-from gen.PSParser import PSParser
-from gen.PSLexer import PSLexer
-from gen.PSListener import PSListener
+from .gen.PSParser import PSParser
+from .gen.PSLexer import PSLexer
+from .gen.PSListener import PSListener
 
 from sympy.printing.str import StrPrinter
 
@@ -497,22 +497,22 @@ def get_differential_var_str(text):
     return text
 
 def test_sympy():
-    print process_sympy("e^{(45 + 2)}")
-    print process_sympy("e + 5")
-    print process_sympy("5 + e")
-    print process_sympy("e")
-    print process_sympy("\\frac{dx}{dy} \\int y x^2 dy")
-    print process_sympy("\\frac{dx}{dy} 5")
-    print process_sympy("\\frac{d}{dx} \\int x^2 dx")
-    print process_sympy("\\frac{dx}{dy} \\int x^2 dx")
-    print process_sympy("\\frac{d}{dy} x^2 + x y = 0")
-    print process_sympy("\\frac{d}{dy} x^2 + x y = 2")
-    print process_sympy("\\frac{d x^3}{dy}")
-    print process_sympy("\\frac{d x^3}{dy} + x^3")
-    print process_sympy("\\int^{5x}_{2} x^2 dy")
-    print process_sympy("\\int_{5x}^{2} x^2 dx")
-    print process_sympy("\\int x^2 dx")
-    print process_sympy("2 4 5 - 2 3 1")
+    print(process_sympy("e^{(45 + 2)}"))
+    print(process_sympy("e + 5"))
+    print(process_sympy("5 + e"))
+    print(process_sympy("e"))
+    print(process_sympy("\\frac{dx}{dy} \\int y x^2 dy"))
+    print(process_sympy("\\frac{dx}{dy} 5"))
+    print(process_sympy("\\frac{d}{dx} \\int x^2 dx"))
+    print(process_sympy("\\frac{dx}{dy} \\int x^2 dx"))
+    print(process_sympy("\\frac{d}{dy} x^2 + x y = 0"))
+    print(process_sympy("\\frac{d}{dy} x^2 + x y = 2"))
+    print(process_sympy("\\frac{d x^3}{dy}"))
+    print(process_sympy("\\frac{d x^3}{dy} + x^3"))
+    print(process_sympy("\\int^{5x}_{2} x^2 dy"))
+    print(process_sympy("\\int_{5x}^{2} x^2 dx"))
+    print(process_sympy("\\int x^2 dx"))
+    print(process_sympy("2 4 5 - 2 3 1"))
 
 if __name__ == "__main__":
     test_sympy()
