@@ -1,0 +1,19 @@
+language: python
+python:
+- '3.3'
+- '3.4'
+- '3.5'
+- '3.6'
+- nightly
+install: pip install .
+after_success: pip install clint
+script: echo 'Done'
+deploy:
+  provider: pypi
+  user: ideaxod
+  password:
+    secure: k7xoLSlHnxxIvpxXQHFQU7cWKSs1hy6cTMFdBXSTy1ZcOk9z1KXr+DPCNWQyS+NmSF3VgOVi9p1I5bodpVvCEipOnyewv77MQwmeCS0WyHhQoy4UkuL7ObfolaFgINked1QvcwG6Qm9W+10choM8EZnuqL4hp2aH0yGu1FknM5aYQjfhnkgByywNxVjkneg24upOFyN6i+2v38+FCqLQ0k0rg7jlhUknFXUZmXO+lAFAdf44r0giBUY9EdHGHT9QUMNfCBGSs9SBuBfVUDfePtPFfVx5FV5DSrYYbqBNP1HFxD2XOqT4aEHbJj5sj9eOuZFML7YNMcttnyplzLnNQCUOFWteP8OZJi5Dio7vNj9iCVR4hhbSni5MMXwlQd+iRdWgkvMxh3lPeYLpvqB9/pTYx89aE9yaphSUwBYeLOWKmcR1XsMF/al6n81ZYalPr815/lachCSvzr6DoCVMCJoKBTtH6bsUMcaslyG1hk0sxuZIYN0nT4q2Y1GEhTyfhlvENmwztJIEHRr38knfQpZx8DKFC0g+IUxqNf/kjgyM2ssJPjtj37pN8Zyj+sMBDx7+T/N1YbFQITUb6bpIBax0fInOR13UiuU1ALdokGJD/RVTupDrtZgC8HEHjcdWDf5S7oyYXi8Z7jmeP6MiIHR6OP0vKC8Qq7gR+hv7kHU=
+  on:
+    tags: true
+    distributions: sdist bdist_wheel
+    repo: jackatbancast/latex2sympy
