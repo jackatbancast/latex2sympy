@@ -16,5 +16,5 @@ setup(
     url='https://github.com/jackatbancast/latex2sympy',
     packages=['latex2sympy'],
     license='MIT',
-    requires=['antlr4-python3-runtime', 'sympy']
+    install_requires=['antlr4-python3-runtime==4.5.3', 'sympy']
 )
