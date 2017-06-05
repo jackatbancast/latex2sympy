@@ -8,3 +8,10 @@
 
 # OSX
 .DS_Store
+
+# virtualenv
+.Python
+bin/
+include/
+lib/
+pip-selfcheck.json
