@@ -8,7 +8,7 @@ except:
 
 setup(
     name='latex2sympy3',
-    version='0.1.0',
+    version='0.1.1',
     description='Sympy generator from LaTeX expressions.',
     long_description=long_description,
     maintainer='jack',

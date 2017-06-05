@@ -15,3 +15,6 @@ bin/
 include/
 lib/
 pip-selfcheck.json
+
+# setuptools
+*.egg-info/
